@@ -20,4 +20,4 @@ const loadRoot = () => {
   }
 };
 
-window.onload(loadRoot);
+window.onload = loadRoot;
