@@ -10,4 +10,8 @@ function App(props) {
   return html`<h1>Hello ${props.name}!</h1>`;
 }
 
-render(html`<${App} name="World" />`, document.getElementById("preact"));
+const root = document.getElementById("preact");
+
+console.log(root);
+
+render(html`<${App} name="World" />`, root);
