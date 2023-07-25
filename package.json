@@ -1,0 +1,24 @@
+{
+  "name": "art-generator",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@types/node": "^20.4.4",
+    "@types/react": "^18.2.16",
+    "html2canvas": "^1.4.1",
+    "preact": "^10.16.0"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.5.0",
+    "eslint-config-silash35": "^2.0.1",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.7"
+  }
+}
