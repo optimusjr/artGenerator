@@ -6,17 +6,21 @@ import SVG from "./svg";
 const VirtualSignature = () => {
   const [name, setName] = useState("Sam Sumitpo");
   const [role, setRole] = useState("Seu Cargo");
-  const virtualSignatureRef = useRef(null);
+  const svgRef = useRef(null);
 
   const getSVGRef = () => {
-    return virtualSignatureRef.current;
+    return svgRef.current;
   };
 
   return (
     <article>
       <h3>Assinatura Virtual</h3>
 
-      <form>
+      <form
+        onsubmit={(e) => {
+          e.preventDefault();
+        }}
+      >
         <label style={{ display: "flex", gap: 8 }}>
           <p>Seu Nome</p>
           <input onChange={(e) => setName((e.target as HTMLInputElement).value)} value={name} />
@@ -27,10 +31,10 @@ const VirtualSignature = () => {
           <input onChange={(e) => setRole((e.target as HTMLInputElement).value)} value={role} />
         </label>
 
-        <DownloadButton getElement={getSVGRef} />
+        <DownloadButton getElement={getSVGRef} imageName="assinatura.png" />
       </form>
 
-      <div ref={virtualSignatureRef} style={{ lineHeight: 0 }}>
+      <div ref={svgRef} style={{ lineHeight: 0 }}>
         <SVG name={name} role={role} />
       </div>
     </article>

@@ -2,27 +2,29 @@ import html2canvas from "html2canvas";
 
 interface Props {
   getElement: () => HTMLElement | null;
+  imageName: string;
 }
 
-const DownloadButton = ({ getElement }: Props) => {
+const DownloadButton = ({ getElement, imageName }: Props) => {
   const handleDownloadImage = async () => {
     const element = getElement();
-    console.log(element);
+
     if (element === null) {
       return;
     }
+
     const canvas = await html2canvas(element);
 
-    const data = canvas.toDataURL("image/jpg");
+    const data = canvas.toDataURL();
     const link = document.createElement("a");
 
     if (typeof link.download === "string") {
       link.href = data;
-      link.download = "image.jpg";
+      link.download = imageName;
 
       document.body.appendChild(link);
       link.click();
-      document.body.removeChild(link);
+      // document.body.removeChild(link);
     } else {
       window.open(data);
     }
