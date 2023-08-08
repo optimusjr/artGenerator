@@ -11,6 +11,7 @@ const App = () => {
 
       <h2 className="tabset">Imagens</h2>
 
+      <h3>Assinatura Virtual</h3>
       <VirtualSignature />
     </div>
   );

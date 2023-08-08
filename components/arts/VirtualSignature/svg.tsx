@@ -84,6 +84,7 @@ const SVG = ({ name, role }: Props) => {
         <text
           style={{
             fontSize: "42.734px",
+            fontWeight: 600,
           }}
           x="30.842"
           y="69.691"
