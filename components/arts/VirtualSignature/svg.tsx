@@ -3,7 +3,7 @@ interface Props {
   role: string;
 }
 
-const VirtualSignature = ({ name, role }: Props) => {
+const SVG = ({ name, role }: Props) => {
   return (
     <svg
       height="1080"
@@ -106,4 +106,4 @@ const VirtualSignature = ({ name, role }: Props) => {
   );
 };
 
-export default VirtualSignature;
+export default SVG;
