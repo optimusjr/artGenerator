@@ -32,13 +32,13 @@ const DownloadButton = ({ getElement, imageName }: Props) => {
 
   return (
     <button
-      onClick={handleDownloadImage}
       style={{
         border: "1px solid black",
         margin: 4,
         padding: 4,
         borderRadius: 4,
       }}
+      onClick={handleDownloadImage}
     >
       Download
     </button>

@@ -23,8 +23,8 @@ const VirtualSignature = () => {
           Seu Nome:
           <input
             onChange={(e) => setName((e.target as HTMLInputElement).value)}
-            value={name}
             style={{ order: "solid 1px black", margin: 4, padding: 4 }}
+            value={name}
           />
         </label>
 
@@ -32,8 +32,8 @@ const VirtualSignature = () => {
           Seu Cargo:
           <input
             onChange={(e) => setRole((e.target as HTMLInputElement).value)}
-            value={role}
             style={{ order: "solid 1px black", margin: 4, padding: 4 }}
+            value={role}
           />
         </label>
 
