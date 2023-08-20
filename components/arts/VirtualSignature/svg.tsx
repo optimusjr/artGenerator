@@ -1,9 +1,10 @@
 interface Props {
   name: string;
   role: string;
+  phone: string;
 }
 
-const SVG = ({ name, role }: Props) => {
+const SVG = ({ name, role, phone }: Props) => {
   return (
     <svg
       height="1080"
@@ -70,7 +71,7 @@ const SVG = ({ name, role }: Props) => {
           x="89.249"
           y="172.948"
         >
-          71 99610-0916
+          {phone}
         </text>
         <text
           style={{

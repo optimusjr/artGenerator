@@ -24,7 +24,7 @@ const DownloadButton = ({ getElement, imageName }: Props) => {
 
       document.body.appendChild(link);
       link.click();
-      // document.body.removeChild(link);
+      document.body.removeChild(link);
     } else {
       window.open(data);
     }
