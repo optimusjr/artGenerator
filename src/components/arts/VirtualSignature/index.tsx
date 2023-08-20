@@ -15,7 +15,7 @@ const VirtualSignature = () => {
 
   return (
     <article>
-      <h3>Assinatura Virtual</h3>
+      <h2>Assinatura Virtual</h2>
 
       <form
         onSubmit={(e) => {
