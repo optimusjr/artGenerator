@@ -32,7 +32,7 @@ Quando você estiver satisfeito com uma nova versão, execute o comando:
 pnpm build
 ```
 
-Ele vai gerar uma pasta `/dist` na raiz do projeto. Dentro dela, e dentro de Assets vc vai encontrar um arquivo `index-(código alfanumérico).js`, sendo que o código muda a cada versão do projeto. Mova esse arquivo para a raiz e exclua o `index-(código alfanumérico).js` antigo.
+Ele vai gerar uma pasta `/dist` na raiz do projeto. Dentro dela, e dentro de `assets` vc vai encontrar um arquivo `index-(código alfanumérico).js`, sendo que o código muda a cada versão do projeto. Mova esse arquivo para a raiz e exclua o `index-(código alfanumérico).js` antigo.
 
 Dito isso, faça um commit e publique as alterações no github. Por fim vá à página da wiki [Art Generator](https://wiki.optimusjr.com.br/pt-br/Art_Generator), clique em editar a página>página>scripts e lá vc vai encontrar algo parecido com isso:
 
