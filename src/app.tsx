@@ -1,3 +1,4 @@
+import Background from "./components/arts/Background";
 import VirtualSignature from "./components/arts/VirtualSignature";
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
       <h1 className="tabset">Imagens</h1>
 
       <VirtualSignature />
+      <Background />
     </div>
   );
 };
