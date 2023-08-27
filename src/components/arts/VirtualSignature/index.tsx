@@ -17,7 +17,8 @@ const VirtualSignature = () => {
     <article>
       <h2>Assinatura Virtual</h2>
       <p>
-        Adicione essa imagem no final dos emails que você enviar utilizando o seu email corporativo.
+        Adicione essa imagem no final dos e-mails que você enviar utilizando o seu e-mail
+        corporativo.
       </p>
 
       <form
