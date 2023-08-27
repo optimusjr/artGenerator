@@ -13,7 +13,7 @@ const Background = () => {
 
   return (
     <article>
-      <h2>PLano de Fundo para o Google Meet</h2>
+      <h2>Plano de Fundo para o Google Meet</h2>
       <p>Use essa imagem como plano de fundo nas reuniões da OPTIMUS por chamada video.</p>
 
       <form
