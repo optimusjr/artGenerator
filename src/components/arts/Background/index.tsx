@@ -29,7 +29,7 @@ const Background = () => {
             value={name}
           />
         </label>
-        <DownloadButton getElement={getSVGRef} imageName="assinatura.png" />
+        <DownloadButton getElement={getSVGRef} imageName="background.png" />
       </form>
 
       <div ref={svgRef} style={{ lineHeight: 0 }}>

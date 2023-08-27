@@ -1,4 +1,4 @@
-import html2canvas from "html2canvas";
+import { toPng } from "html-to-image";
 
 interface Props {
   getElement: () => HTMLElement | null;
@@ -13,21 +13,18 @@ const DownloadButton = ({ getElement, imageName }: Props) => {
       return;
     }
 
-    const canvas = await html2canvas(element);
-
-    const data = canvas.toDataURL();
-    const link = document.createElement("a");
-
-    if (typeof link.download === "string") {
-      link.href = data;
-      link.download = imageName;
-
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    } else {
-      window.open(data);
-    }
+    toPng(element, { cacheBust: true })
+      .then((dataUrl) => {
+        const link = document.createElement("a");
+        link.download = imageName;
+        link.href = dataUrl;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   return (
