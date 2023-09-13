@@ -12,8 +12,10 @@ const App = () => {
       <h1>Recomendações antes de prosseguir</h1>
       <ul>
         <li>
-          Instale a <a href="https://fonts.google.com/specimen/League+Spartan">League Spartan</a> no
-          seu computador, inclusive as versões static
+          <strong>IMPORTANTE:</strong> Instale a fonte{" "}
+          <a href="https://fonts.google.com/specimen/League+Spartan">League Spartan</a> no seu
+          computador, inclusive as versões static. Caso contrario a fonte da imagem baixada irá
+          ficar diferente.
         </li>
         <li>Prefira utilizar um computador em vez do celular</li>
         <li>
