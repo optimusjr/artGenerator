@@ -45,7 +45,7 @@ const VirtualSignature = () => {
         </label>
 
         <label style={{ display: "flex", gap: 8, alignItems: "center" }}>
-          Seu numero de telefone:
+          Seu número de telefone:
           <input
             onChange={(e) => setPhone((e.target as HTMLInputElement).value)}
             style={{ order: "solid 1px black", margin: 4, padding: 4 }}
