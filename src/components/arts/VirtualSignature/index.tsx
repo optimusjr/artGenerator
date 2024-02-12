@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 
+import CappedForm from "../../CappedForm";
 import DownloadButton from "../../DownloadButton";
 import SVG from "./svg";
 
@@ -21,11 +22,7 @@ const VirtualSignature = () => {
         corporativo.
       </p>
 
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-        }}
-      >
+      <CappedForm>
         <label style={{ display: "flex", gap: 8, alignItems: "center" }}>
           Seu Nome:
           <input
@@ -54,7 +51,7 @@ const VirtualSignature = () => {
         </label>
 
         <DownloadButton getElement={getSVGRef} imageName="assinatura" />
-      </form>
+      </CappedForm>
 
       <div ref={svgRef} style={{ lineHeight: 0 }}>
         <SVG name={name} phone={phone} role={role} />

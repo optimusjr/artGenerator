@@ -8,7 +8,7 @@ O projeto “Art Generator” é uma aplicação web simples que utiliza o frame
 
 ## Instalação
 
-Para instalar as dependências do projeto, execute o seguinte comando (Tendo o PNPM instalado, com o Node.Js v18):
+Para instalar as dependências do projeto, execute o seguinte comando (Tendo o PNPM e o Node.js instalado):
 
 ```bash
 pnpm install
