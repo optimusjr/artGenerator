@@ -4,7 +4,7 @@ User
 
 Gerador de Imagens para a OPTIMUS Jr., disponível neste [artigo](https://wiki.optimusjr.com.br/pt-br/Art_Generator) da WikOPTIMUS.
 
-O projeto “Art Generator” é uma aplicação web simples que utiliza o framework Preact para criar interfaces de usuário e o Vite como ferramenta de desenvolvimento. No final ele gera um arquivo .js executado na página da wiki, renderizando toda a interface.
+O projeto “Art Generator” é uma aplicação web simples que utiliza o framework React para criar interfaces de usuário e o Vite como ferramenta de desenvolvimento. No final ele gera um arquivo .js executado na página da wiki, renderizando toda a interface.
 
 ## Instalação
 
