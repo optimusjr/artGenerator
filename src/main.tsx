@@ -6,7 +6,7 @@ import App from "./app";
 const loadRoot = () => {
   console.log("loading root");
 
-  const root = document.getElementById("root");
+  const root = document.getElementById("react-root");
   if (root === null) {
     console.log("No root element, trying again in one second");
     window.setTimeout(loadRoot, 1000);
