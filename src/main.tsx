@@ -14,14 +14,11 @@ const loadRoot = () => {
   }
 
   // Load fonts
-  const link = document.createElement("link");
-  link.setAttribute("rel", "stylesheet");
-  link.setAttribute("type", "text/css");
-  link.setAttribute(
-    "href",
-    "https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap",
-  );
-  document.head.appendChild(link);
+  const styleElement = document.createElement("style");
+  styleElement.innerHTML = `
+  @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap')
+  `;
+  document.head.appendChild(styleElement);
 
   // Render
   createRoot(root).render(

@@ -53,9 +53,7 @@ const VirtualSignature = () => {
         <DownloadButton getElement={getSVGRef} imageName="assinatura" />
       </CappedForm>
 
-      <div ref={svgRef} style={{ lineHeight: 0 }}>
-        <SVG name={name} phone={phone} role={role} />
-      </div>
+      <SVG name={name} phone={phone} role={role} svgRef={svgRef} />
     </article>
   );
 };

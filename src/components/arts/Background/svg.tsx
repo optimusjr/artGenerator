@@ -1,10 +1,12 @@
 interface Props {
   name: string;
+  svgRef: React.RefObject<SVGSVGElement>;
 }
 
-const SVG = ({ name }: Props) => (
+const SVG = ({ name, svgRef }: Props) => (
   <svg
     height="1090"
+    ref={svgRef}
     style={{ width: "100%", height: "auto", fontFamily: "League Spartan", fontWeight: "bold" }}
     viewBox="0 0 1920 1090"
     width="1920"

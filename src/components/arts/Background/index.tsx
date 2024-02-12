@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 
+import CappedForm from "../../CappedForm";
 import DownloadButton from "../../DownloadButton";
 import SVG from "./svg";
 
@@ -16,11 +17,7 @@ const Background = () => {
       <h2>Plano de Fundo para o Google Meet</h2>
       <p>Use essa imagem como plano de fundo nas reuniões da OPTIMUS por chamada video.</p>
 
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-        }}
-      >
+      <CappedForm>
         <label style={{ display: "flex", gap: 8, alignItems: "center" }}>
           Seu Nome:
           <input
@@ -30,11 +27,9 @@ const Background = () => {
           />
         </label>
         <DownloadButton getElement={getSVGRef} imageName="background" />
-      </form>
+      </CappedForm>
 
-      <div ref={svgRef} style={{ lineHeight: 0 }}>
-        <SVG name={name} />
-      </div>
+      <SVG name={name} svgRef={svgRef} />
     </article>
   );
 };
